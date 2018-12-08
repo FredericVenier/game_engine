@@ -48,7 +48,7 @@ void GameComponent::run() {
 	Uint32 frameStart(0);
 	int frameTime(1);
 
-	SDL_SetWindowGrab(window, SDL_TRUE);
+	//SDL_SetWindowGrab(window, SDL_TRUE);
 
 	while(running) {
 		frameStart = SDL_GetTicks();
