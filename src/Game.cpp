@@ -3,7 +3,7 @@
 Game::Game() : state(START_MENU), quitting(false), menuDeleted(false) {
 	menu = new TitleMenu(this);
 	renderer = NULL;
-	player = NULL;
+	//player = NULL;
 }
 
 Game::~Game() {
