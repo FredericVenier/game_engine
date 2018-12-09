@@ -35,6 +35,8 @@ void GameComponent::init(const char* title, int xWindow, int yWindow, int width,
 		renderer = SDL_CreateRenderer(window, -1, 0);
 		if(!renderer) {
 			std::cout << "ERROR: Renderer Creation issue (GameComponent) : " << SDL_GetError() << std::endl; //debug
+		} else {
+			game->setRenderer(renderer);
 		}
 
 		running = true;
